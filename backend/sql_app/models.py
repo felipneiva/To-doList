@@ -1,6 +1,8 @@
 from sqlalchemy import Boolean, Column, String
 from .database import Base
 
+# criar a tabela para armazenar os "to-dos" 
+
 class Todo(Base):
     __tablename__ = "todos"
 
