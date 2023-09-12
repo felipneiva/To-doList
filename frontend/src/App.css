@@ -1,42 +1,159 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+    background-color: bisque;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.new-task {
+    background-color: green;
+    color: white;
+    font-family: monospace;
+    font-size: 20px; 
+    padding: 15px 28px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition-duration: 0.4s;
+}
+
+.new-task:hover {
+    background-color: limegreen;
+}
+
+.create-task{
+    margin-top: 10px;
+    background-color: cadetblue;
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.create-task:hover{
+    background-color: lightblue;
+}
+
+.close{
+    margin-left: 90px;
+    background-color: brown;
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.close:hover{
+    background-color:crimson;
+}
+
+
+
+.add-task{
+    margin-top: 20px;
+}
+
+.task-input{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+
+.field-name{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px
+}
+
+.todo-item {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
   }
+  
+.todo-item h2 {
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+  
+.todo-item p {
+    font-size: 16px;
+    font-family: cursive;
+}
+  
+.todo-item button {
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.done-item {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightgreen;
   }
+  
+.done-item h2 {
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+  
+.done-item p {
+    font-size: 16px;
+    font-family: cursive;
+}
+  
+.done-item button {
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+  
+.toggle-status:hover{
+    background-color: green;
+    color: white;
 }
 
-.card {
-  padding: 2em;
+.delete:hover{
+    background-color: red;
+    color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.tasks-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.done-tasks{
+    flex: 1;
+    margin-left: 20px;
 }
